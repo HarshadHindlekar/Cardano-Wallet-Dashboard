@@ -1,10 +1,10 @@
 import React from 'react';
 
-function AddressDetails({ address }) {
+function AddressDetails(props) {
   return (
     <div>
       <h2>Address Details</h2>
-      <p>Address: {address}</p>
+      <p>Address: {props.address}</p>
       <p>Balance: 100 ADA</p>
       <p>Transaction History:</p>
       <ul>

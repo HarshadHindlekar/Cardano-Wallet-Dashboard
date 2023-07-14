@@ -1,14 +1,13 @@
 import React from 'react';
 
 function SearchBar(props) {
-//   const [address, setAddress] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
     props.onSearch(props.address);
   };
 
   const handleChange = (e) => {
+    e.preventDefault();
     props.setAddress(e.target.value);
   };
 
